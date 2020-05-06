@@ -11,7 +11,11 @@ z = "I like turtles!"
 # Using the printf operator (%), print the following feeding in the values of x,
 # y, and z:
 # x is 10, y is 2.25, z is "I like turtles!"
-
+info = 'x is %i, y is %f, and z is %s'
+values = x, y, z
+print(info % values)
 # Use the 'format' string method to print the same thing
-
-# Finally, print the same thing using an f-string
+sentence = "x is {}, y is {}, and z is {}".format(x, y, z)
+print(sentence)
+# Finally, print the same thing using an f-stringprint("x is %i")
+print(f'x is {x}, y is {y}, and z is {z}')
